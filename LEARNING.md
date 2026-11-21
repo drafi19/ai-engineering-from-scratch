@@ -45,6 +45,7 @@ membangun. Fondasi mau dibangun ulang supaya tidak bolong.
 | Date | Lesson | Quiz | Note |
 |------|--------|------|------|
 | 2026-11-21 | 00/01-dev-environment | 3/3 | Benar pada `Route` (required vs optional) dan exit code. Salah saat menelusuri `digits`/`parts` — mengira `.split()` menempel semua digit jadi "24181" dan `parts[0]` = 24181, padahal list `['24','18','1']` dan `parts[0]` = `'24'`. Juga salah exit code saat 3/4 (menjawab 0, seharusnya 1). Perlu diulang: cara kerja `.split()` tanpa argumen, dan kenapa `main()` mengembalikan non-zero saat gagal. |
+| 2026-11-21 | 00/02-git-and-collaboration | 3/3 | Paham commit sebagai snapshot (bukan diff) dan branch sebagai pointer 41 byte. Satu koreksi: file untracked saat `checkout` tidak dikembalikan DAN tidak dihapus — tetap di disk. Dipraktikkan langsung di repo demo: fast-forward vs merge commit dua parent. Repo lokal masih shallow (5 commit), `git log` tidak bisa telusuri sejarah penuh sampai `git fetch --unshallow upstream`. |
 
 ## Review queue
 
