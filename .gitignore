@@ -151,11 +151,3 @@ manuals/*/capture/demos/**/*.db
 .project-validation/
 projects/*/solution/output/
 projects/*/solution/demo-output/
-
-# Personal learner state (fork-only). Not part of the curriculum.
-LEARNING.md
-MCP-LEARNING.md
-AGENT-SKILLS-LEARNING.md
-REVERSE-ENGINEERING-LEARNING.md
-CLAUDE-CERTIFICATION.md
-INTERVIEW-LEARNING.md
