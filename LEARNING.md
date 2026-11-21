@@ -46,6 +46,7 @@ membangun. Fondasi mau dibangun ulang supaya tidak bolong.
 |------|--------|------|------|
 | 2026-11-21 | 00/01-dev-environment | 3/3 | Benar pada `Route` (required vs optional) dan exit code. Salah saat menelusuri `digits`/`parts` — mengira `.split()` menempel semua digit jadi "24181" dan `parts[0]` = 24181, padahal list `['24','18','1']` dan `parts[0]` = `'24'`. Juga salah exit code saat 3/4 (menjawab 0, seharusnya 1). Perlu diulang: cara kerja `.split()` tanpa argumen, dan kenapa `main()` mengembalikan non-zero saat gagal. |
 | 2026-11-21 | 00/02-git-and-collaboration | 3/3 | Paham commit sebagai snapshot (bukan diff) dan branch sebagai pointer 41 byte. Satu koreksi: file untracked saat `checkout` tidak dikembalikan DAN tidak dihapus — tetap di disk. Dipraktikkan langsung di repo demo: fast-forward vs merge commit dua parent. Repo lokal masih shallow (5 commit), `git log` tidak bisa telusuri sejarah penuh sampai `git fetch --unshallow upstream`. |
+| 2026-11-21 | 00/03-gpu-setup-and-cloud | 3/3 | GPU lokal nyata: GTX 1050, 2 GB VRAM, compute 6.1, torch 2.11.0+cu126. `gpu_check.py` jalan: CPU 0.790s vs GPU 0.658s = **1x speedup** (bukan 100x) karena VRAM kecil + overhead PCIe. Paham `synchronize()` untuk timing asinkron dan OOM bersifat biner. Koreksi: hitung 7B fp16 = 14 GB (bukan 14,7 — itu salah pakai 2,1 GB VRAM sebagai bytes/param). Perlu diingat: batas VRAM teoretis vs realistis (activations + CUDA context). |
 
 ## Review queue
 
